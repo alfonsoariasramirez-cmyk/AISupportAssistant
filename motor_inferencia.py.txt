@@ -1,0 +1,20 @@
+# motor_inferencia.py
+from base_conocimiento import intenciones
+from preprocesamiento import limpiar_texto
+
+def evaluar_intencion(texto_usuario):
+    tokens_usuario = limpiar_texto(texto_usuario)
+    mejor_intencion = None
+    max_coincidencias = 0
+    
+    for intencion, datos in intenciones.items():
+        coincidencias = sum(1 for token in tokens_usuario for keyword in datos["keywords"] if keyword in token)
+        
+        if coincidencias > max_coincidencias:
+            max_coincidencias = coincidencias
+            mejor_intencion = intencion
+            
+    if mejor_intencion and max_coincidencias > 0:
+        return intenciones[mejor_intencion]["respuesta"]
+    else:
+        return "No logré identificar el incidente en mis reglas. ¿Podrías usar términos clave como 'logs', 'reinicio' o 'despliegue'?"
