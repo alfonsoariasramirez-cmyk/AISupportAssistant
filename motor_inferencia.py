@@ -17,4 +17,4 @@ def evaluar_intencion(texto_usuario):
     if mejor_intencion and max_coincidencias > 0:
         return intenciones[mejor_intencion]["respuesta"]
     else:
-        return "No logré identificar el incidente en mis reglas. ¿Podrías usar términos clave como 'logs', 'reinicio' o 'despliegue'?"
+        return "No logré encontrar una respuesta al incidente en mi knowledge base. ¿Podrías usar términos clave como 'logs', 'reinicio' o 'despliegue'?"

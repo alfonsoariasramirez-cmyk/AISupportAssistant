@@ -3,11 +3,11 @@
 intenciones = {
     "saludo": {
         "keywords": ["hola", "buen", "dia", "tard", "ayud", "soporte"],
-        "respuesta": "Hola. Soy tu asistente operativo. ¿En qué incidente técnico te puedo ayudar hoy?"
+        "respuesta": "Hola. Soy tu asistente operativo de IA. ¿Dime que incidente atenderemos hoy?"
     },
     "reinicio_servicio": {
         "keywords": ["reinici", "levant", "caid", "inici", "servic", "servidor"],
-        "respuesta": "Para reiniciar el servicio web, accede por SSH y ejecuta: 'sudo systemctl restart web_service'."
+        "respuesta": "Para reiniciar el web server, accede por SSH y ejecuta: 'sudo systemctl restart web_service'."
     },
     "logs_aplicacion": {
         "keywords": ["log", "traz", "registr", "revis", "error", "buscar"],
@@ -19,7 +19,7 @@ intenciones = {
     },
     "despliegue_fallido": {
         "keywords": ["despliegu", "releas", "fall", "pipelin", "trab", "accion", "github"],
-        "respuesta": "Si el despliegue falló, verifica GitHub Actions. Si es un rerun, asegura que DevOps Change Velocity lo procesó."
+        "respuesta": "Si el despliegue falló, verifica el error en la consola de GitHub Actions."
     },
     "bloqueo_cuenta": {
         "keywords": ["bloque", "cuent", "contraseñ", "password", "usuari", "reset"],
@@ -27,18 +27,18 @@ intenciones = {
     },
     "base_datos_lenta": {
         "keywords": ["bas", "dat", "lent", "timeout", "bd", "query"],
-        "respuesta": "Verifica las conexiones activas en Bytebase o revisa si hay algún lock en las tablas."
+        "respuesta": "Verifica las conexiones activas en el motor de base de datos o revisa si hay algún lock en las tablas consultadas."
     },
     "certificados_ssl": {
         "keywords": ["certific", "ssl", "venc", "expir", "renov"],
-        "respuesta": "Genera un nuevo CSR y cárgalo en la consola de AWS/Azure."
+        "respuesta": "Genera un nuevo CSR, envialo al proveedor de certificados para su firma y cárgalo en la consola de NGINX."
     },
     "escalar_l3": {
         "keywords": ["escal", "nivel", "l3", "arquitectur", "pod", "resolv"],
-        "respuesta": "Generando directriz. Asigna el ticket en ServiceNow al grupo 'Infra Architect / L3 Support'."
+        "respuesta": "Generando resumen de la falla. Asigna el ticket al grupo 'L3 Support'."
     },
     "despedida": {
         "keywords": ["graci", "adi", "list", "resuelt", "ok"],
-        "respuesta": "¡De nada! Recuerda documentar la resolución en el ticket."
+        "respuesta": "¡Hasta luego! Recuerda documentar la resolución y causa raiz en el ticket de soporte."
     }
 }
