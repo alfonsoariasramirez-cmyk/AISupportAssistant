@@ -26,7 +26,7 @@ intenciones_runbooks = {
         "respuesta": (
             "[RUNBOOK-LOG-02] Los registros del portal de facturación se almacenan en "
             "'/var/log/billing-portal/production.log' y '/var/log/nginx/error.log'. Ejecuta: "
-            "'tail -n 100 -f /var/log/billing-portal/production.log | grep -iE "ERROR|CFDI|TIMEOUT"'."
+            "'tail -n 100 -f /var/log/billing-portal/production.log | grep -iE \"ERROR|CFDI|TIMEOUT\"'."
         )
     },
     "error_500": {
