@@ -1,44 +1,80 @@
-# base_conocimiento.py
+# ==============================================================================
+# MÓDULO: base_conocimiento.py
+# PROPÓSITO: Repositorio estructurado de conocimiento operativo (Runbooks).
+# CONCEPTO IA: En sistemas híbridos de IA (Neuro-Simbólicos o Clasificación +
+# Reglas de Negocio), el modelo de Machine Learning clasifica la "intención",
+# mientras que la base de conocimiento garantiza que la respuesta entregada sea
+# determinista, auditable y libre de alucinaciones.
+# ==============================================================================
 
-intenciones = {
+intenciones_runbooks = {
     "saludo": {
-        "keywords": ["hola", "buen", "dia", "tard", "ayud", "soporte"],
-        "respuesta": "Hola. Soy tu asistente operativo de IA. ¿Dime que incidente atenderemos hoy?"
+        "respuesta": (
+            "Hola. Soy IASupportAssistant (v2 Multimodal). Estoy listo para apoyarte con "
+            "incidentes del portal de facturación en la nube. Puedes describir el problema o "
+            "adjuntar una captura de pantalla."
+        )
     },
     "reinicio_servicio": {
-        "keywords": ["reinici", "levant", "caid", "inici", "servic", "servidor"],
-        "respuesta": "Para reiniciar el web server, accede por SSH y ejecuta: 'sudo systemctl restart web_service'."
+        "respuesta": (
+            "[RUNBOOK-WEB-01] Para reiniciar el web server sin perder sesiones activas durante "
+            "picos de tráfico: 1) Verifica nodos activos en el balanceador. 2) Accede por SSH y "
+            "ejecuta: 'sudo systemctl reload-or-restart nginx && sudo systemctl restart billing_portal.service'."
+        )
     },
     "logs_aplicacion": {
-        "keywords": ["log", "traz", "registr", "revis", "error", "buscar"],
-        "respuesta": "Los logs se encuentran en: '/var/log/app/production.log'. Usa 'tail -f'."
+        "respuesta": (
+            "[RUNBOOK-LOG-02] Los registros del portal de facturación se almacenan en "
+            "'/var/log/billing-portal/production.log' y '/var/log/nginx/error.log'. Ejecuta: "
+            "'tail -n 100 -f /var/log/billing-portal/production.log | grep -iE "ERROR|CFDI|TIMEOUT"'."
+        )
     },
     "error_500": {
-        "keywords": ["500", "internal", "portal", "caid", "acces", "http"],
-        "respuesta": "El Error 500 suele indicar saturación de memoria. Revisa los logs de los contenedores Docker."
+        "respuesta": (
+            "[RUNBOOK-HTTP-500] El Error 500 indica saturación de workers o memoria en el web server "
+            "ante picos de usuarios. Verifica uso de RAM ('free -h'), escala instancias en el grupo de "
+            "autoescalado y revisa excepciones de timbrado en los logs."
+        )
     },
     "despliegue_fallido": {
-        "keywords": ["despliegu", "releas", "fall", "pipelin", "trab", "accion", "github"],
-        "respuesta": "Si el despliegue falló, verifica el error en la consola de GitHub Actions."
+        "respuesta": (
+            "[RUNBOOK-CICD-04] Si el pipeline de GitHub Actions falló: 1) Revisa el job fallido en "
+            "la pestaña Actions. 2) Valida variables de entorno y secretos de conexión a la nube. "
+            "3) Si el ambiente quedó inconsistente, ejecuta el workflow 'Rollback-Production'."
+        )
     },
     "bloqueo_cuenta": {
-        "keywords": ["bloque", "cuent", "contraseñ", "password", "usuari", "reset"],
-        "respuesta": "Para desbloquear, ingresa a Azure AD y selecciona 'Restablecer contraseña'."
+        "respuesta": (
+            "[RUNBOOK-IAM-05] Para desbloquear cuentas de usuarios o analistas: ingresa al portal de "
+            "Azure AD -> Usuarios -> busca el correo corporativo -> selecciona 'Desbloquear inicio de sesión' "
+            "y ejecuta 'Restablecer contraseña temporal'."
+        )
     },
     "base_datos_lenta": {
-        "keywords": ["bas", "dat", "lent", "timeout", "bd", "query"],
-        "respuesta": "Verifica las conexiones activas en el motor de base de datos o revisa si hay algún lock en las tablas consultadas."
+        "respuesta": (
+            "[RUNBOOK-DB-06] Ante lentitud o timeouts en Oracle/SQL en la nube por cierres de mes: "
+            "1) Revisa el pool de conexiones activas. 2) Consulta bloqueos ('v$session' / 'sys.dm_exec_requests') "
+            "en tablas de facturación. 3) Escala temporalmente las IOPS/vCores de la instancia."
+        )
     },
     "certificados_ssl": {
-        "keywords": ["certific", "ssl", "venc", "expir", "renov"],
-        "respuesta": "Genera un nuevo CSR, envialo al proveedor de certificados para su firma y cárgalo en la consola de NGINX."
+        "respuesta": (
+            "[RUNBOOK-SEC-07] Para renovar certificados SSL vencidos: 1) Genera un nuevo CSR con OpenSSL. "
+            "2) Tramita la firma con la autoridad certificadora. 3) Carga el archivo .crt y .key en "
+            "'/etc/nginx/ssl/' y ejecuta 'sudo nginx -t && sudo systemctl reload nginx'."
+        )
     },
     "escalar_l3": {
-        "keywords": ["escal", "nivel", "l3", "arquitectur", "pod", "resolv"],
-        "respuesta": "Generando resumen de la falla. Asigna el ticket al grupo 'L3 Support'."
+        "respuesta": (
+            "[RUNBOOK-ESC-08] Escalamiento formal generado: adjunta el ID de correlación, traza de error "
+            "y captura diagnóstica. Asigna el ticket en ServiceNow al grupo 'Cloud-Billing-L3-Architecture' "
+            "con prioridad Alta."
+        )
     },
     "despedida": {
-        "keywords": ["graci", "adi", "list", "resuelt", "ok"],
-        "respuesta": "¡Hasta luego! Recuerda documentar la resolución y causa raiz en el ticket de soporte."
+        "respuesta": (
+            "¡Hasta luego! Recuerda documentar la causa raíz y el tiempo de recuperación (MTTR) "
+            "en el ticket correspondiente."
+        )
     }
 }
