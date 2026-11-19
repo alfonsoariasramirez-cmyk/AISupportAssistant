@@ -1,0 +1,301 @@
+id_consulta,texto_consulta,intencion
+INC-107,El portal de clientes muestra Internal Server Error tras el aumento de tráfico,error_500
+INC-240,Guía para generar CSR y renovar certificado SSL en producción,certificados_ssl
+INC-038,Requiero reiniciar la instancia del webserver por alta carga de usuarios,reinicio_servicio
+INC-090,Ayúdame a ubicar los logs del aplicativo web para analizar un incidente,logs_aplicacion
+INC-033,Necesito reiniciar el web server porque no responde a las peticiones de factura,reinicio_servicio
+INC-251,"La falla del portal de facturación no está documentada, escalar a nivel 3",escalar_l3
+INC-193,La BD en la nube está saturada por las consultas masivas de cierre de mes,base_datos_lenta
+INC-121,Falló el release de la nueva versión del portal de facturación en GitHub Actions,despliegue_fallido
+INC-020,"Buen día, necesito soporte para atender un pico de incidencias de fin de mes",saludo
+INC-226,El portal de facturación presenta error de certificado inválido o vencido,certificados_ssl
+INC-025,"Hola, ¿me apoyas revisando una falla reportada en el portal?",saludo
+INC-296,"Solucionado el incidente, te agradezco mucho, hasta luego",despedida
+INC-104,Los usuarios no pueden facturar porque les sale error 500 en pantalla,error_500
+INC-221,El certificado SSL expiró y bloquea el acceso seguro al portal web,certificados_ssl
+INC-206,Qué indica el runbook para resolver lentitud en la base de datos,base_datos_lenta
+INC-298,"Muchas gracias, cierro sesión de soporte por el momento",despedida
+INC-292,"Resuelto, gracias por la información operativa, hasta pronto",despedida
+INC-039,Qué procedimiento sigo para levantar de nuevo el servidor de aplicaciones,reinicio_servicio
+INC-159,Qué pasos sigo para quitar el bloqueo de una cuenta en Azure AD,bloqueo_cuenta
+INC-174,Dime los pasos para restablecer el acceso de un usuario bloqueado,bloqueo_cuenta
+INC-246,Cómo genero el resumen de la falla para transferir el ticket a L3,escalar_l3
+INC-002,"Buenas tardes equipo de soporte, me pueden ayudar con un tema operativo",saludo
+INC-225,Cómo se renueva el certificado HTTPS del servidor web de producción,certificados_ssl
+INC-252,Cómo escalo una incidencia urgente que afecta el cierre de mes a L3,escalar_l3
+INC-145,El pipeline de despliegue falló al intentar actualizar los archivos del web server,despliegue_fallido
+INC-134,El pipeline se quedó congelado durante la publicación en el servidor web,despliegue_fallido
+INC-247,"No tengo permisos ni alcance en L1 para corregir este bug, escalar a L3",escalar_l3
+INC-207,Hay tablas bloqueadas en el motor de BD que afectan el portal web,base_datos_lenta
+INC-087,"Cómo reviso los logs de la app tras el pico de 20,000 usuarios",logs_aplicacion
+INC-006,"Buenas tardes, necesito soporte urgente por un cierre de mes",saludo
+INC-284,"Listo el desbloqueo y validado con el usuario, muchas gracias",despedida
+INC-124,El release nocturno del portal falló y no subieron los ajustes fiscales,despliegue_fallido
+INC-191,Qué reviso cuando la base de datos del portal muestra lentitud extrema,base_datos_lenta
+INC-035,"El portal de facturación está abajo, cómo reinicio el servicio",reinicio_servicio
+INC-232,Tenemos incidencia de seguridad por caducidad de certificado en el portal,certificados_ssl
+INC-182,Tenemos timeout en la base de datos Oracle por el pico de fin de mes,base_datos_lenta
+INC-253,"No logré restablecer el servicio con los pasos básicos, escalar a L3 Support",escalar_l3
+INC-108,Qué reviso primero cuando el portal web empieza a tirar errores 500,error_500
+INC-116,Por qué el portal devuelve error 500 y qué pasos indica el runbook,error_500
+INC-049,Cómo restablecer el servicio web tras un bloqueo por alto tráfico,reinicio_servicio
+INC-254,Necesito pasar este ticket a tercer nivel de soporte para revisión profunda,escalar_l3
+INC-243,Necesito escalar este caso crítico de facturación a nivel 3,escalar_l3
+INC-277,"Excelente apoyo, ya pude resolver el problema del cliente, gracias",despedida
+INC-074,Cuál es la ruta del archivo production.log del portal de facturación,logs_aplicacion
+INC-269,Debo transferir este reporte de incidente a ingeniería L3,escalar_l3
+INC-101,El servidor web devuelve código 500 Internal Server Error,error_500
+INC-262,Qué información debo incluir al escalar un incidente a soporte nivel 3,escalar_l3
+INC-160,Cliente no puede iniciar sesión en el portal porque su usuario está bloqueado,bloqueo_cuenta
+INC-209,Cómo identifico consultas lentas o bloqueos en la base de datos,base_datos_lenta
+INC-056,Cómo levantar el servicio del portal después de una caída,reinicio_servicio
+INC-007,"Hola asistente, ¿me puedes apoyar con un incidente en producción?",saludo
+INC-270,Cómo procedo para escalar un caso no resuelto hacia L3 Support,escalar_l3
+INC-027,"Hola, necesito ayuda para consultar un runbook de operaciones",saludo
+INC-234,El navegador rechaza la conexión al portal por certificado SSL expirado,certificados_ssl
+INC-114,El portal web arroja error 500 al conectar con el backend,error_500
+INC-140,El pase de cambios al ambiente productivo del portal quedó incompleto,despliegue_fallido
+INC-154,Necesito resetear la contraseña de un usuario del portal de facturación,bloqueo_cuenta
+INC-106,Cómo resolver un error 500 causado por saturación de memoria en el web server,error_500
+INC-285,"Perfecto, gracias por la guía técnica, que tengas buen día",despedida
+INC-190,Tenemos alerta de saturación de conexiones en la base de datos de producción,base_datos_lenta
+INC-233,Qué procedimiento sigo para actualizar el SSL en NGINX sin caída,certificados_ssl
+INC-244,"Ya apliqué el runbook pero la falla persiste, cómo escalo a L3 Support",escalar_l3
+INC-047,"El servicio web está caído, qué comando ejecuto para levantarlo",reinicio_servicio
+INC-257,"No puedo resolver el bloqueo de base de datos, debo escalarlo a nivel 3",escalar_l3
+INC-229,Dónde cargo los archivos del certificado SSL renovado en el web server,certificados_ssl
+INC-218,Los clientes ven advertencia de sitio no seguro por el certificado SSL,certificados_ssl
+INC-237,Cómo instalo el certificado firmado en el servidor web de facturación,certificados_ssl
+INC-133,Cómo diagnostico un despliegue fallido en el repositorio del portal,despliegue_fallido
+INC-066,Qué comando uso para monitorear el archivo de logs del servidor web,logs_aplicacion
+INC-208,La instancia de Oracle en la nube muestra alto consumo y lentitud,base_datos_lenta
+INC-043,Necesito bajar y subir el servicio del webserver de facturación,reinicio_servicio
+INC-132,"No se completó el pase a producción del portal web, falló el release",despliegue_fallido
+INC-271,"Muchas gracias por el apoyo, ya quedó resuelto el incidente del portal",despedida
+INC-272,"Listo, el servicio web ya respondió correctamente, gracias y adiós",despedida
+INC-228,Requiero renovar el certificado de seguridad del dominio de facturación,certificados_ssl
+INC-010,"Buenas noches, requiero guía para atender una alerta del portal de facturación",saludo
+INC-135,Error al ejecutar el despliegue automático de la aplicación de facturas,despliegue_fallido
+INC-100,Reporte masivo de error 500 al intentar acceder al módulo de facturación,error_500
+INC-276,"Ok perfecto, incidente cerrado con éxito, nos vemos luego",despedida
+INC-157,Cómo restablezco el password de acceso al portal web,bloqueo_cuenta
+INC-267,Por favor indícame cómo escalar el incidente al equipo de tercer nivel,escalar_l3
+INC-152,Cómo desbloqueo el acceso de un cliente en Azure AD,bloqueo_cuenta
+INC-158,Un usuario interno pide desbloqueo de su cuenta operativa,bloqueo_cuenta
+INC-223,Necesito instalar el nuevo certificado de seguridad en la consola de NGINX,certificados_ssl
+INC-149,Cómo atiendo una alerta de release fallido en el entorno de producción,despliegue_fallido
+INC-211,El certificado SSL del portal de facturación está por vencer esta semana,certificados_ssl
+INC-032,"El servicio web se quedó colgado por el pico de fin de mes, cómo lo levanto",reinicio_servicio
+INC-289,"Excelente, con esos comandos se solucionó la falla, gracias",despedida
+INC-300,"Ok, incidente atendido satisfactoriamente, hasta luego",despedida
+INC-067,Necesito revisar el log de la aplicación para ver qué pasó con un cliente,logs_aplicacion
+INC-178,Qué hago cuando un usuario reporta bloqueo de cuenta en producción,bloqueo_cuenta
+INC-268,"Falla mayor en el portal web sin solución conocida, escalar a L3",escalar_l3
+INC-210,Reporte de lentitud generalizada en el portal por saturación de la BD,base_datos_lenta
+INC-086,Dónde se guardan los registros de auditoría y error del portal web,logs_aplicacion
+INC-052,"Se detuvo el servicio del servidor web, cuál es el procedimiento de reinicio",reinicio_servicio
+INC-139,Se abortó el despliegue del servicio web por un fallo en las acciones de CI,despliegue_fallido
+INC-092,Los usuarios reportan Internal Server Error 500 durante el cierre de mes,error_500
+INC-242,"El problema en el portal es muy complejo, cómo lo transfiero con arquitectura",escalar_l3
+INC-089,Qué ruta debo consultar para ver las trazas del portal en producción,logs_aplicacion
+INC-162,Cómo se gestiona un ticket de cuenta bloqueada en el portal de facturación,bloqueo_cuenta
+INC-097,Los clientes ven pantalla blanca con error 500 al descargar su factura,error_500
+INC-216,Cuál es el procedimiento para cargar un certificado SSL renovado en NGINX,certificados_ssl
+INC-213,Cómo renuevo el certificado SSL en el servidor web NGINX,certificados_ssl
+INC-196,Necesito validar si existen sesiones bloqueadas en Oracle,base_datos_lenta
+INC-078,Necesito extraer las trazas de error de la aplicación web,logs_aplicacion
+INC-147,No subió el hotfix de facturación porque tronó el pipeline de release,despliegue_fallido
+INC-034,Cuál es el comando para levantar el servicio web caído en producción,reinicio_servicio
+INC-022,"Buenas tardes, busco instrucciones para resolver un ticket de producción",saludo
+INC-071,En qué directorio están los logs de aplicación del portal en la nube,logs_aplicacion
+INC-061,Dónde están los logs del portal de facturación para revisar un error de timbrado,logs_aplicacion
+INC-085,Cuál es el comando para leer los logs en tiempo real en el servidor,logs_aplicacion
+INC-125,Cómo reviso por qué falló el despliegue automatizado en GitHub,despliegue_fallido
+INC-227,Dime los pasos para reemplazar un certificado SSL expirado,certificados_ssl
+INC-192,Hay un lock en las tablas de facturación que detiene las operaciones,base_datos_lenta
+INC-155,El cliente reporta cuenta bloqueada tras varios intentos fallidos de login,bloqueo_cuenta
+INC-281,"Ok entendido y aplicado, el portal ya opera normal, gracias",despedida
+INC-205,El portal de facturación sufre timeouts constantes contra la base de datos,base_datos_lenta
+INC-105,Tenemos alerta de múltiples errores 500 en el balanceador del portal,error_500
+INC-220,Pasos del runbook para renovar certificados vencidos en el webserver,certificados_ssl
+INC-261,"Ya validé logs y reinicié servicios pero sigue caído, escalar a L3",escalar_l3
+INC-123,Hubo un error en el pipeline al intentar publicar cambios en producción,despliegue_fallido
+INC-011,"Hola soporte L1, necesito ayuda rápida con un caso de usuario",saludo
+INC-122,El despliegue del portal web se quedó trabado en el pipeline de CI/CD,despliegue_fallido
+INC-073,Necesito buscar una excepción en los registros del servidor web,logs_aplicacion
+INC-282,"Muchas gracias, doy por cerrado este incidente operativo, adiós",despedida
+INC-031,Cómo reinicio el servidor web del portal de facturación en la nube,reinicio_servicio
+INC-008,"Buen día, tengo una consulta sobre la operación del portal web",saludo
+INC-062,Necesito ver las trazas de error del servidor web en tiempo real,logs_aplicacion
+INC-079,Cómo accedo a los registros de eventos del portal de facturación,logs_aplicacion
+INC-179,Necesito apoyar con el desbloqueo de usuario en el portal web,bloqueo_cuenta
+INC-224,Alerta preventiva: el certificado SSL del portal caduca en 48 horas,certificados_ssl
+INC-005,"Hola qué tal, vengo a consultar un procedimiento del runbook de facturación",saludo
+INC-297,"Perfecto, ya quedó aplicado el procedimiento, gracias y adiós",despedida
+INC-083,Dónde están las trazas del web server para diagnosticar una falla,logs_aplicacion
+INC-255,Cuál es el procedimiento para escalar un incidente crítico con arquitectura,escalar_l3
+INC-250,Requiero transferir este caso complejo al equipo de arquitectura L3,escalar_l3
+INC-245,Este incidente requiere intervención de ingeniería de nivel 3,escalar_l3
+INC-096,Se está presentando un Internal Server Error en el servidor web,error_500
+INC-171,Usuario bloqueado en el módulo de autenticación del portal web,bloqueo_cuenta
+INC-051,Dime cómo levantar el servicio web del portal de clientes,reinicio_servicio
+INC-256,"El problema requiere modificación de código en el portal, escalar a L3",escalar_l3
+INC-077,Qué comando me permite seguir en vivo los logs del servidor,logs_aplicacion
+INC-028,"Buen día, tengo un caso urgente de soporte en el portal",saludo
+INC-130,Falló la actualización del portal de facturación previa al cierre de mes,despliegue_fallido
+INC-046,Cómo aplico un reinicio controlado al servicio del portal de facturación,reinicio_servicio
+INC-129,Qué hago si el pipeline de CI/CD marca error al desplegar el portal,despliegue_fallido
+INC-248,"El error en la nube excede el soporte operativo, debo mandarlo a nivel 3",escalar_l3
+INC-001,"Hola buen día, necesito apoyo con una incidencia en el portal de facturación",saludo
+INC-239,El certificado HTTPS del sitio web caducó durante el fin de mes,certificados_ssl
+INC-169,Necesito desbloquear el perfil de acceso de un administrador del portal,bloqueo_cuenta
+INC-287,"Ok, problema resuelto en tiempo y forma, muchas gracias",despedida
+INC-076,Dónde puedo consultar los logs cuando un usuario reporta fallo al facturar,logs_aplicacion
+INC-231,Cómo genero la solicitud CSR para la renovación anual del SSL,certificados_ssl
+INC-088,Necesito localizar el archivo de logs de errores del servidor de facturación,logs_aplicacion
+INC-202,La base de datos no da abasto con las consultas concurrentes del portal,base_datos_lenta
+INC-185,Cómo reviso si hay bloqueos o locks en las tablas de la base de datos,base_datos_lenta
+INC-030,"Buenas tardes, requiero apoyo para validar el estado del servicio",saludo
+INC-003,"Hola, estoy atendiendo un ticket del portal de facturas en la nube",saludo
+INC-142,Cómo verifico el motivo de un despliegue fallido en el portal,despliegue_fallido
+INC-065,Dime dónde buscar las trazas de error del portal web,logs_aplicacion
+INC-263,"El incidente supera las capacidades de L1/L2, transferir a arquitectura",escalar_l3
+INC-286,"Ya quedó restablecido el portal de facturación, gracias y adiós",despedida
+INC-167,Cómo atiendo una solicitud de reseteo de password para el portal,bloqueo_cuenta
+INC-275,"Todo quedó funcionando bien tras el pico de usuarios, muchas gracias",despedida
+INC-099,Cómo diagnostico un error HTTP 500 en el portal web en la nube,error_500
+INC-201,Degradación severa en el motor SQL por el tráfico de fin de mes,base_datos_lenta
+INC-153,Un analista administrativo olvidó su contraseña y su cuenta se bloqueó,bloqueo_cuenta
+INC-109,Un cliente reporta error 500 al subir sus datos fiscales en el portal,error_500
+INC-258,Cómo documento y transfiero un incidente fuera de alcance hacia L3,escalar_l3
+INC-161,Necesito ayudar a un usuario a resetear su contraseña de acceso,bloqueo_cuenta
+INC-040,"El servidor web dejó de responder en el cierre de mes, cómo lo reinicio",reinicio_servicio
+INC-029,"Hola, ¿me puedes asistir con una incidencia de infraestructura en la nube?",saludo
+INC-299,"Listo, el usuario ya pudo generar su factura, gracias por todo",despedida
+INC-024,"Buen día, requerimos soporte en el ambiente productivo de facturación",saludo
+INC-127,Tenemos un error en la ejecución del workflow de release,despliegue_fallido
+INC-131,El job de despliegue en GitHub Actions terminó en rojo,despliegue_fallido
+INC-188,Cómo verifico las conexiones activas en el motor de base de datos,base_datos_lenta
+INC-212,Los navegadores marcan alerta de seguridad porque expiró el certificado SSL,certificados_ssl
+INC-093,Aparece error 500 en el portal cuando entran muchos usuarios a la vez,error_500
+INC-203,Cómo verifico el estado de las conexiones en la BD en la nube,base_datos_lenta
+INC-183,Las consultas SQL del portal de facturación están tardando demasiado,base_datos_lenta
+INC-110,El servicio web responde 500 cuando hay más de 15 mil usuarios concurrentes,error_500
+INC-150,El workflow de despliegue del portal presentó un error crítico,despliegue_fallido
+INC-189,El portal está lento porque las queries a Oracle no responden a tiempo,base_datos_lenta
+INC-138,Qué pasos sigo cuando un release del portal falla en producción,despliegue_fallido
+INC-144,Tenemos incidencia porque el despliegue en la nube marcó error,despliegue_fallido
+INC-260,Este caso necesita análisis de especialistas de nivel 3,escalar_l3
+INC-036,Cómo hacer un restart del servidor web sin afectar las sesiones activas,reinicio_servicio
+INC-068,Dónde se ubican los archivos de registro de errores del portal,logs_aplicacion
+INC-037,"Se cayó el servicio del portal web, dime los pasos para reiniciarlo",reinicio_servicio
+INC-118,Fallo en el portal web: devuelve error 500 al procesar la solicitud,error_500
+INC-165,Un cliente corporativo reporta bloqueo de usuario en pleno cierre de mes,bloqueo_cuenta
+INC-283,"Todo solucionado, agradezco tu rápida respuesta, hasta luego",despedida
+INC-128,El despliegue hacia el webserver falló en la etapa de validación,despliegue_fallido
+INC-168,El usuario dice que su cuenta aparece suspendida o bloqueada al entrar,bloqueo_cuenta
+INC-200,Qué comando o revisión hago para detectar locks en la base de datos,base_datos_lenta
+INC-204,Tenemos cuellos de botella en las queries de consulta de CFDI,base_datos_lenta
+INC-265,Cómo realizo el escalamiento formal de un ticket complejo en producción,escalar_l3
+INC-146,Qué indica el runbook cuando falla un despliegue en GitHub Actions,despliegue_fallido
+INC-055,Qué comando se usa para hacer restart al servicio web en la nube,reinicio_servicio
+INC-290,"Listo, todo en orden en el servidor web, muchas gracias y adiós",despedida
+INC-279,"Resuelto el tema en producción, te agradezco mucho la asistencia",despedida
+INC-103,Falla crítica: el portal responde con HTTP 500 a las peticiones POST,error_500
+INC-081,Requiero revisar el historial de errores en el log de la aplicación,logs_aplicacion
+INC-009,"Hola, ¿estás disponible para revisar un problema con el servidor?",saludo
+INC-249,Qué grupo de asignación uso para escalar un incidente grave a L3,escalar_l3
+INC-015,"Hola, ¿me puedes orientar con una incidencia en el portal web?",saludo
+INC-199,Los usuarios reportan que al guardar la factura se queda girando por la BD,base_datos_lenta
+INC-197,El tiempo de respuesta de la base de datos subió drásticamente,base_datos_lenta
+INC-084,Necesito ver el log del sistema para rastrear un problema de factura,logs_aplicacion
+INC-176,Cómo desbloqueo un usuario en Azure Active Directory,bloqueo_cuenta
+INC-057,Necesito reiniciar el webserver porque los usuarios no pueden entrar a facturar,reinicio_servicio
+INC-273,"Perfecto, con eso solucionamos el ticket de facturación, hasta luego",despedida
+INC-264,Necesito escalar esta alerta crítica al grupo L3 Support de inmediato,escalar_l3
+INC-164,Dime cómo restablecer la contraseña de un usuario desde Azure AD,bloqueo_cuenta
+INC-070,Requiero revisar los logs del web server por un incidente en cierre de mes,logs_aplicacion
+INC-241,"No puedo resolver esta incidencia en L1, necesito escalar el ticket a soporte L3",escalar_l3
+INC-119,Cómo atiendo una alerta de saturación con error 500 en el servidor web,error_500
+INC-235,Necesito verificar cómo renovar el certificado digital del servidor web,certificados_ssl
+INC-063,En qué ruta se guardan los registros de la aplicación en la nube,logs_aplicacion
+INC-187,Se están generando errores de timeout al consultar el historial de facturas,base_datos_lenta
+INC-137,El despliegue de correcciones en el portal web arrojó error en el pipeline,despliegue_fallido
+INC-044,"El portal no carga y parece que el servicio web está detenido, cómo lo inicio",reinicio_servicio
+INC-238,Pasos para atender la expiración del certificado SSL del portal,certificados_ssl
+INC-156,Cuál es el procedimiento para desbloquear usuarios en directorio activo,bloqueo_cuenta
+INC-019,"Hola, tengo una duda operativa sobre el portal de facturación",saludo
+INC-166,Cuál es la ruta en Azure AD para desbloquear una cuenta de acceso,bloqueo_cuenta
+INC-274,"Gracias por la ayuda, ya documenté la causa raíz en el sistema",despedida
+INC-180,Procedimiento para resetear password y desbloquear cuentas de acceso,bloqueo_cuenta
+INC-069,Cómo consulto las trazas recientes del servicio de facturación,logs_aplicacion
+INC-172,Cómo realizo el desbloqueo de cuenta y envío de contraseña temporal,bloqueo_cuenta
+INC-054,"El portal de facturación está caído, necesito reiniciar el servidor web",reinicio_servicio
+INC-091,El portal web de facturación marca error 500 al intentar generar el XML,error_500
+INC-095,Qué hago si el portal de facturación arroja error 500 al consultar,error_500
+INC-042,Cómo se reinicia el servicio web cuando se satura por los 20 mil usuarios,reinicio_servicio
+INC-094,Tenemos caída parcial en el portal web con código HTTP 500,error_500
+INC-214,Necesito generar un nuevo CSR para renovar el certificado del portal,certificados_ssl
+INC-163,El sistema bloqueó el usuario de un operador por intentos incorrectos,bloqueo_cuenta
+INC-117,Los analistas reportan código 500 al validar el portal en producción,error_500
+INC-295,"Todo listo por ahora, muchas gracias por la asistencia técnica",despedida
+INC-098,El portal lanza error 500 por saturación en el pico de fin de mes,error_500
+INC-026,"Buenas tardes, solicito asistencia técnica para un incidente activo",saludo
+INC-222,Qué hago para generar el CSR y enviarlo a firma del proveedor SSL,certificados_ssl
+INC-060,Ayúdame con los pasos para reiniciar el servicio del portal web,reinicio_servicio
+INC-219,Cómo actualizo el certificado SSL del portal de facturación en la nube,certificados_ssl
+INC-021,"Hola, ¿puedes ayudarme a diagnosticar un problema en el servicio web?",saludo
+INC-075,Dime cómo revisar las trazas de ejecución del servicio web,logs_aplicacion
+INC-198,Cómo atiendo una incidencia de base de datos lenta en el portal web,base_datos_lenta
+INC-059,"El servidor web se trabó por el tráfico de fin de mes, cómo lo reinicio",reinicio_servicio
+INC-170,Qué procedimiento aplica para recuperar una contraseña bloqueada,bloqueo_cuenta
+INC-012,"Qué tal, buen día, ¿me apoyas con información operativa del sistema?",saludo
+INC-018,"Buenas tardes, ¿me ayudas a revisar un procedimiento técnico?",saludo
+INC-181,La base de datos en la nube está muy lenta y las facturas tardan en timbrarse,base_datos_lenta
+INC-266,"No tenemos solución en el runbook para este error, mandar a nivel 3",escalar_l3
+INC-148,El despliegue automatizado del portal web falló hace unos minutos,despliegue_fallido
+INC-186,La base de datos SQL en la nube presenta alta latencia con 20 mil usuarios,base_datos_lenta
+INC-151,Un usuario del portal tiene bloqueada su cuenta y no puede entrar a facturar,bloqueo_cuenta
+INC-041,Dame el comando SSH para reiniciar el servicio del portal web,reinicio_servicio
+INC-194,Cómo diagnostico un problema de rendimiento en la base de datos SQL,base_datos_lenta
+INC-064,Cómo reviso los logs de producción cuando falla la generación de una factura,logs_aplicacion
+INC-236,Alerta de certificado SSL vencido en el ambiente productivo del portal,certificados_ssl
+INC-023,"Hola asistente operativo, necesito apoyo con una incidencia",saludo
+INC-136,Necesito revisar la consola de GitHub Actions por un release fallido,despliegue_fallido
+INC-177,El cliente necesita resetear su contraseña para descargar sus facturas del mes,bloqueo_cuenta
+INC-184,Hay degradación de rendimiento en la BD y el portal se queda cargando,base_datos_lenta
+INC-050,"El webserver no procesa solicitudes de CFDI, cómo lo reinicio",reinicio_servicio
+INC-195,Las peticiones al motor de base de datos están expirando por timeout,base_datos_lenta
+INC-288,"Te agradezco el soporte, ya voy a cerrar el ticket, hasta luego",despedida
+INC-294,"Gracias por tu apoyo, el portal ya está estable, adiós",despedida
+INC-173,Un ejecutivo de cuenta tiene bloqueado su acceso al portal de facturas,bloqueo_cuenta
+INC-111,Necesito el procedimiento para atender incidentes de HTTP 500 en el portal,error_500
+INC-080,Dime en qué carpeta del servidor se almacenan los logs de error,logs_aplicacion
+INC-278,"Listo, muchas gracias por las instrucciones del runbook, adiós",despedida
+INC-175,Reporte de bloqueo de credenciales al intentar ingresar al portal,bloqueo_cuenta
+INC-291,Muchas gracias por ayudarme a atender la emergencia de cierre de mes,despedida
+INC-082,Cómo busco un código de error específico dentro de los logs del portal,logs_aplicacion
+INC-004,"Buen día, requiero asistencia técnica para validar una falla en el sistema",saludo
+INC-143,El release del portal de facturación no terminó correctamente,despliegue_fallido
+INC-230,Se venció el certificado SSL y los usuarios no pueden entrar por HTTPS,certificados_ssl
+INC-113,Cómo mitigo los errores 500 en el servidor web durante fin de mes,error_500
+INC-215,El certificado digital de seguridad del dominio web venció hoy,certificados_ssl
+INC-293,"Ok perfecto, ya quedó documentado y cerrado el caso, gracias",despedida
+INC-102,Qué indica el error 500 en nuestro portal de facturación y cómo se atiende,error_500
+INC-014,"Buenas tardes, tengo un reporte de falla en el módulo de timbrado",saludo
+INC-259,Escalar ticket a L3 Support por falla persistente en el timbrado,escalar_l3
+INC-120,El portal de facturación presenta Internal Server Error desde hace 10 minutos,error_500
+INC-112,Se cayó la vista de facturación con un Internal Server Error 500,error_500
+INC-048,Necesito reiniciar el demonio del servidor web en producción,reinicio_servicio
+INC-016,"Buen día, iniciando turno de soporte, necesito consultar una guía",saludo
+INC-017,"Hola equipo, requiero asistencia con un problema reportado por clientes",saludo
+INC-217,Tenemos alerta de expiración próxima del certificado HTTPS del portal,certificados_ssl
+INC-045,Pasos del runbook para reiniciar el web server en la nube,reinicio_servicio
+INC-280,"Gracias asistente, ya quedó atendido el reporte, hasta pronto",despedida
+INC-053,Cómo reinicio el servicio web en Linux para recuperar el portal,reinicio_servicio
+INC-072,Cómo veo los últimos errores registrados en el log de producción,logs_aplicacion
+INC-115,Tenemos un incidente abierto por error 500 en el portal de facturación,error_500
+INC-126,Se detuvo el pipeline de despliegue del portal web en la nube,despliegue_fallido
+INC-141,Falló el pipeline de integración continua al desplegar el módulo web,despliegue_fallido
+INC-013,"Hola, necesito consultar los pasos para resolver un incidente en la nube",saludo
+INC-058,Cuál es la instrucción para reiniciar el servicio web de producción,reinicio_servicio
