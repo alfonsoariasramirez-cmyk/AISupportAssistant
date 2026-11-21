@@ -1,6 +1,6 @@
 # 🤖 AISupportAssistant: Asistente de Soporte Operativo L1
 
-Este proyecto es nace del prototipo de un asistente inteligente pensado para ayudar a equipos de soporte técnico y operaciones a diagnosticar fallas más rápido. La idea surge con un objetivo claro: reducir el tiempo que toma resolver un incidente crítico (MTTR) permitiendo que el analista de soporte describa el problema en sus propias palabras y, además, pueda adjuntar una captura de pantalla del error para recibir los pasos de solución (obteniendolos de  los runbooks entregados por parte del equipo de desarrollo).
+Este proyecto nace del prototipo de un asistente inteligente pensado para ayudar a equipos de soporte técnico y operaciones a diagnosticar fallas más rápido. La idea surge con un objetivo claro: reducir el tiempo que toma resolver un incidente crítico (MTTR) permitiendo que el analista de soporte describa el problema en sus propias palabras y, además, pueda adjuntar una captura de pantalla del error para recibir los pasos de solución (obteniendolos de  los runbooks entregados por parte del equipo de desarrollo).
 
 Durante los temas de la materia, el asistente fue evolucionando desde un sistema sencillo basado en texto hasta un modelo multimodal que combina **Procesamiento de Lenguaje Natural (NLP)** y **Visión por Computadora**.
 
