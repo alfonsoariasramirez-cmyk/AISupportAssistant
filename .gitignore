@@ -1,6 +1,7 @@
 # Archivos de cache de Python
 __pycache__/
 *.py[cod]
+*$py.class
 
 # Archivos de entorno virtual
 .venv/
