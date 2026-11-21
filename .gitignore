@@ -1,0 +1,16 @@
+# Archivos de cache de Python
+__pycache__/
+*.py[cod]
+
+# Archivos de entorno virtual
+.venv/
+venv/
+env/
+
+# Archivos de sistema / IDE
+.DS_Store
+Thumbs.db
+
+# Archivos de entrenamiento (Se excluyen por tamaño mayor a 90MB)
+*.keras
+dataset_imagenes/
