@@ -67,7 +67,7 @@ Para la segunda entrega se dio un salto de reglas fijas a modelos entrenados cap
    **En caso que requiera reentrenar el asistente**
    * Ejecute el script de visión para entrenar y genere el archivo `modelo_visual_resnet50.keras`:
    ```bash
-     python clasificador_visual.py
+   python clasificador_visual.py
      ```
 
 5. **Para probar el asistente**
