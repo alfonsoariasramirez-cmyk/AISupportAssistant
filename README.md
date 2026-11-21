@@ -59,8 +59,7 @@ Para la segunda entrega se dio un salto de reglas fijas a modelos entrenados cap
 
    👉 **[Descargar dataset_imagenes desde OneDrive](https://1drv.ms/f/c/d1f942fca79dd4e3/IgCl1wxI7jWURLax_WE7VG6nAXdUT8iyQoKAqLk3KYNKai0?e=sCyfYu)**
 
-   👉 **[Descargar de modelo entrenado keras desde OneDrive]
-(https://1drv.ms/u/c/d1f942fca79dd4e3/IQCwGTmWHP6YTYZp7SKyrBIIAdpte1b_D6Zttur5rWmzmEM?e=ptIFM9)**
+   👉 **[Descargar de modelo entrenado keras desde OneDrive](https://1drv.ms/u/c/d1f942fca79dd4e3/IQCwGTmWHP6YTYZp7SKyrBIIAdpte1b_D6Zttur5rWmzmEM?e=ptIFM9)**
 
    * Coloca la carpeta `dataset_imagenes/` y el archivo modelo_visual_resnet50.keras descargados en la raíz del proyecto (al mismo nivel que `main.py`), verificando que la carpeta de imagenes contenga las subcarpetas por clase: `alerta_base_datos`, `error_http_500`, `fallo_pipeline_cicd` y `terminal_logs_error`.
 
