@@ -10,14 +10,14 @@
 #   ventanas, gráficos), congelando sus pesos y entrenando únicamente una capa
 #   clasificadora final adaptada a nuestras 4 categorías de errores operativos.
 # ==============================================================================
-
+TF_CPP_MIN_LOG_LEVEL="2"
 import os
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.applications import ResNet50
-from tensorflow.keras.applications.resnet50 import preprocess_input
-from tensorflow.keras import layers, models
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications import ResNet50  # pyright: ignore[reportMissingImports]
+from tensorflow.keras.applications.resnet50 import preprocess_input  # pyright: ignore[reportMissingImports]
+from tensorflow.keras import layers, models  # pyright: ignore[reportMissingModuleSource]
+from tensorflow.keras.utils import load_img, img_to_array  # pyright: ignore[reportMissingImports]
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, 
     f1_score, confusion_matrix, classification_report
@@ -178,8 +178,8 @@ def clasificar_imagen_incidente(ruta_imagen: str):
         modelo = construir_modelo_resnet50(len(CLASES_VISUALES))
 
     # Conversión de imagen a tensor de entrada
-    img = image.load_img(ruta_imagen, target_size=(224, 224))
-    img_array = image.img_to_array(img)
+    img = load_img(ruta_imagen, target_size=(224, 224))
+    img_array = img_to_array(img)
     img_batch = np.expand_dims(img_array, axis=0)  # Keras espera shape (batch_size, H, W, C)
 
     # Inferencia
